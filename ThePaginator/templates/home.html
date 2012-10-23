@@ -1,0 +1,9 @@
+{% if is_paginated %}{% load paginator %}{% paginator 3 %}{% endif %}
+
+{% if object_list %}
+   <ul>{% for post in object_list %}
+      <li />{{ post.text }}
+   {% endfor %}</ul>
+{% endif %}
+
+{% if is_paginated %}{% load paginator %}{% paginator 3 %}{% endif %}
